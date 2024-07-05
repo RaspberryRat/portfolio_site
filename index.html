@@ -7,6 +7,57 @@
     <link href="dist/styles.css" rel="stylesheet">
 </head>
 <body>
-<h1 class="text-3xl">Hello, Tailwind CSS!</h1>
+<main>
+    <header class="bg-main-yellow flex text-slate-600">
+        <picture>
+            <source srcset="./images/backhead_800.jpg" media="(min-width: 1000px">
+            <source srcset="./images/backhead_600.jpg" media="(min-width: 800px">
+            <img src="./images/backhead_320.jpg" alt="Photo of Raspberry Rat">
+        </picture>
+
+        <div class="flex flex-col">
+            <h1 class="text-2xl">About Me</h1>
+            <p>
+                Aspiring software developer learning my craft. Currently hold an undergraduate and graduate degree
+                in Environmental Sciences, and Biology currently. But I am on a path to obtain a degree in
+                Computer Sciences.
+            </p>
+            <p>
+                I have been trying to develop my skills in website development and cybersecurity as I pursue a new
+                career
+                in the technology field.
+            </p>
+
+            <p>
+                Currently I develop my web applications in ruby on rails.
+            </p>
+        </div>
+
+    </header>
+    
+    
+    <section class="bg-alt-blue text-white">
+        <h2>My Work</h2>
+        <ul>
+            <li>Website for National Scientific Group</li>
+            <li>Social Network</li>
+            <li>Chess</li>
+            <li>Flight Booker</li>
+            <li>Members Only</li>
+            <li>Event Website</li>
+        </ul>
+    </section>
+
+    <footer class="bg-main-yellow text-slate-600">
+        <h3>Contact me</h3>
+        <p>Reach out if you would like to know more about me or my work.</p>
+        <p>email:</p>
+        <ul>
+            <li>github</li>
+            <li>linkedin</li>
+            <li>discord</li>
+        </ul>
+    </footer>
+</main>
 </body>
 </html>

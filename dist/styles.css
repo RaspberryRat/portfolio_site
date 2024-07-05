@@ -501,13 +501,30 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.flex {
+  display: flex;
 }
-.font-bold {
-  font-weight: 700;
+.flex-col {
+  flex-direction: column;
 }
-.underline {
-  text-decoration-line: underline;
+.bg-alt-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 104 251 / var(--tw-bg-opacity));
 }
+.bg-main-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 205 69 / var(--tw-bg-opacity));
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-slate-600 {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
