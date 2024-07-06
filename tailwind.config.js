@@ -7,7 +7,10 @@ module.exports = {
       colors: {
         'main-yellow': '#fecd45',
         'alt-blue': '#2568fb',
-      }
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to bottom right, #fecd45 49%, white 40%)'
+      },
     },
   },
   variants: {
