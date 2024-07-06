@@ -1,36 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="flex justify-center">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind CSS</title>
     <link href="dist/styles.css" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
-<body>
-<main>
-    <header class="bg-main-yellow flex text-slate-600">
-        <picture>
+<body class="max-w-[1300px] min-w-[320px]">
+<main >
+    <header class="bg-main-yellow text-slate-600 flex items-center">
+        <picture class="m-16 mr-0">
             <source srcset="./images/backhead_800.jpg" media="(min-width: 1000px">
             <source srcset="./images/backhead_600.jpg" media="(min-width: 800px">
             <img src="./images/backhead_320.jpg" alt="Photo of Raspberry Rat">
         </picture>
 
-        <div class="flex flex-col">
-            <h1 class="text-2xl">About Me</h1>
-            <p>
-                Aspiring software developer learning my craft. Currently hold an undergraduate and graduate degree
-                in Environmental Sciences, and Biology currently. But I am on a path to obtain a degree in
-                Computer Sciences.
-            </p>
-            <p>
-                I have been trying to develop my skills in website development and cybersecurity as I pursue a new
-                career
-                in the technology field.
-            </p>
-
-            <p>
-                Currently I develop my web applications in ruby on rails.
-            </p>
+        <div class="flex bg-main-yellow max-w-2x m-16 ml-0 pt-12 pb-12">
+            <div class="flex flex-col bg-white pt-6 pl-6 pr-6">
+                <h1 class="text-2xl font-bold mb-6">About Me</h1>
+                <p>
+                    Aspiring software developer learning my craft. Currently hold an undergraduate and graduate degree
+                    in Environmental Sciences, and Biology currently. But I am on a path to obtain a degree in
+                    Computer Sciences.
+                </p>
+                <p>
+                    I have been trying to develop my skills in website development and cybersecurity as I pursue a new
+                    career
+                    in the technology field. Currently I develop my web applications in ruby on rails.
+                </p>
+                <ul class="flex self-end items-center gap-3 mt-6 mb-2">
+                    <li class="w-8">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                    </li>
+                    <li>linkedin</li>
+                    <li>discord</li>
+                </ul>
+            </div>
         </div>
 
     </header>
@@ -53,7 +59,9 @@
         <p>Reach out if you would like to know more about me or my work.</p>
         <p>email:</p>
         <ul>
-            <li>github</li>
+            <li>
+                <i class="devicon-github-original-wordmark colored"></i>
+            </li>
             <li>linkedin</li>
             <li>discord</li>
         </ul>
