@@ -6,21 +6,24 @@
     <title>Tailwind CSS</title>
     <link href="dist/styles.css" rel="stylesheet">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script src="./js/script.js" defer></script>
 </head>
 <body class="max-w-[1300px] min-w-[320px]">
 <header></header>
 <main class="min-w-[400px]">
     <div class="bg-pale-brown p-12 rounded-xl shadow-inner-xl z-0 relative min-w-[500px]">
         <div class="shadow-sunken rounded-2xl">
-            <img src="./images/wallpaper_800_600.png" alt="Pixel art rolling hills"
-                 class="relative z-[-1] rounded-2xl block">
+                <img src="./images/wallpaper_800_600.png" alt="Pixel art rolling hills"
+                        class="relative z-[-1] rounded-2xl block animate-turnOff"
+                        id="monitor-screen"
+                >
         </div>
         <div class="flex">
             <p class="mt-2 text-red-600 font-bold">COMPAQ</p>
-            <button type="button" class="ml-auto mt-2">
+            <button type="button" class="ml-auto mt-2" id="monitor-btn">
                 <img src="./images/power-btn.png" alt="power button" width="35" height="auto"
                      id="power-btn"
-                    class="motion-safe:animate-scale hover:pause active:animate-poweroff">
+                    class="motion-safe:animate-scale hover:pause active:animate-powerOff">
             </button>
         </div>
     </div>

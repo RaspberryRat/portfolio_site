@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   purge: ['./*.html'],
+  safelist: [
+      'animate-turnOff',
+      'animate-turnOn'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -13,11 +17,22 @@ module.exports = {
         scale0: {
           '0%': {transform: 'scale(1)'},
           '100%': {transform: 'scale(0)'},
+
+        },
+        tvOff: {
+          '0%': {transform: 'scale(1, 1)', filter: 'brightness(100%)' },
+          '100%': { transform: 'scale(0.6, 0)', filter: 'brightness(800%)' }
+        },
+        tvOn: {
+          '0%': { transform: 'scale(0.6, 0)', filter: 'brightness(800%)' },
+          '100%': {transform: 'scale(1, 1)', filter: 'brightness(100%)' }
         }
       },
       animation: {
         scale: 'scale50 3s ease-in-out infinite',
-        poweroff: 'scale0 50ms ease-out'
+        powerOff: 'scale0 50ms ease-out',
+        turnOff: 'tvOff 750ms ease-out forwards',
+        turnOn: 'tvOn 750ms ease-out forwards'
       },
       boxShadow: {
         'inner-xl': 'inset 0px 0px 50px 10px rgba(0, 0, 0, 0.3)',
