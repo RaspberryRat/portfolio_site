@@ -1,13 +1,15 @@
-monitorBtn = document.getElementById('monitor-btn')
-
-const monitorScreen = document.getElementById('monitor-screen')
+const monitorBtn = document.getElementById('monitor-btn');
+const monitor = document.getElementsByClassName('monitor');
 
 monitorBtn.addEventListener('click', () => {
-    if (monitorScreen.classList.contains('animate-turnOff')) {
-        monitorScreen.classList.remove('animate-turnOff')
-        monitorScreen.classList.add('animate-turnOn')
-    } else if (monitorScreen.classList.contains('animate-turnOn')) {
-        monitorScreen.classList.remove('animate-turnOn')
-        monitorScreen.classList.add('animate-turnOff')
-    }
-})
+    // Convert HTMLCollection to array using spread operator [...]
+    [...monitor].forEach(piece => {
+        if (piece.classList.contains('animate-turnOff')) {
+            piece.classList.remove('animate-turnOff');
+            piece.classList.add('animate-turnOn');
+        } else if (piece.classList.contains('animate-turnOn')) {
+            piece.classList.remove('animate-turnOn');
+            piece.classList.add('animate-turnOff');
+        }
+    });
+});
