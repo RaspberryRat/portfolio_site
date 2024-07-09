@@ -3,7 +3,9 @@ module.exports = {
   purge: ['./*.html'],
   safelist: [
     'animate-turnOff',
-    'animate-turnOn'
+    'animate-turnOn',
+    'animate-open',
+    'animate-close'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -29,13 +31,23 @@ module.exports = {
         tvOn: {
           '0%': { transform: 'scale(0.6, 0)', filter: 'brightness(800%)' },
           '100%': { transform: 'scale(1, 1)', filter: 'brightness(100%)' }
+        },
+        folderOpen: {
+          '0%': { transform: 'scale(0, 0)' },
+          '100%': { transform: 'scale(1, 1)' }
+        },
+        folderClose: {
+          '0%': { transform: 'scale(1, 1)' },
+          '100%': { transform: 'scale(0, 0)' }
         }
       },
       animation: {
         scale: 'scale50 3s ease-in-out infinite',
         powerOff: 'scale0 50ms ease-out',
         turnOff: 'tvOff 750ms ease-out forwards',
-        turnOn: 'tvOn 750ms ease-out forwards'
+        turnOn: 'tvOn 750ms ease-out forwards',
+        open: 'folderOpen 1s ease-in forwards',
+        close: 'folderClose 1s ease-in forwards'
       },
       boxShadow: {
         'inner-xl': 'inset 0px 0px 50px 10px rgba(0, 0, 0, 0.3)',
