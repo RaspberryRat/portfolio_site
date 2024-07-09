@@ -5,7 +5,9 @@ module.exports = {
     'animate-turnOff',
     'animate-turnOn',
     'animate-open',
-    'animate-close'
+    'animate-close',
+    'animate-foldersOn',
+    'animate-foldersOff'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -39,15 +41,33 @@ module.exports = {
         folderClose: {
           '0%': { transform: 'scale(1, 1)' },
           '100%': { transform: 'scale(0, 0)' }
-        }
+        },
+        foldersTurnOff: {
+          '0%': {
+            transform: 'scale(1, 1) translateY(0%), translateX(0%)'
+          },
+          '100%': {
+            transform: 'scale(0, 0) translateY(-300%) translateX(70%)'
+          }
+        },
+        foldersTurnOn: {
+          '0%': {
+            transform: 'scale(0, 0) translateY(-300%) translateX(70%)'
+          },
+          '100%': {
+            transform: 'scale(1, 1) translateY(0%), translateX(0%)'
+          },
+        },
       },
       animation: {
         scale: 'scale50 3s ease-in-out infinite',
         powerOff: 'scale0 50ms ease-out',
         turnOff: 'tvOff 750ms ease-out forwards',
         turnOn: 'tvOn 750ms ease-out forwards',
-        open: 'folderOpen 1s ease-in forwards',
-        close: 'folderClose 1s ease-in forwards'
+        foldersOff: 'foldersTurnOff 400ms ease-out forwards',
+        foldersOn: 'foldersTurnOn 1000ms ease-out forwards',
+        open: 'folderOpen 500ms ease-in forwards',
+        close: 'folderClose 500ms ease-in forwards',
       },
       boxShadow: {
         'inner-xl': 'inset 0px 0px 50px 10px rgba(0, 0, 0, 0.3)',

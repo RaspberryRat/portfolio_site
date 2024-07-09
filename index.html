@@ -20,38 +20,38 @@
 
                 <img src="./images/wallpaper_800_600.png"
                     alt="Pixel art rolling hills"
-                    class="monitor relative z-[-1] rounded-2xl block animate-turnOff"
+                    class="relative z-[-1] rounded-2xl block animate-turnOff"
                     id="monitor-screen">
-                <div
-                    class="folders monitor
+                <div id="folders"
+                    class="folders
                     grid grid-cols-3 gap-6
-                    absolute bottom-36 left-28 animate-turnOff text-sm font-bold text-slate-100">
+                    absolute bottom-36 left-28 animate-foldersOff text-sm font-bold text-slate-100">
                     <button type="button" id="group-page-btn">
                         <img src="./images/folder-icon.png" alt="folder"
                             width="50px" height="auto">
                         <p class="text-left">Group Webpage</p>
                     </button>
-                    <button type="button">
+                    <button type="button" id="social-network-btn">
                         <img src="./images/folder-icon.png" alt="folder"
                             width="50px" height="auto">
                         <p class="text-left">Social Network</p>
                     </button>
-                    <button type="button">
+                    <button type="button" id="chess-btn">
                         <img src="./images/folder-icon.png" alt="folder"
                             width="50px" height="auto">
                         <p class="text-left">Chess</p>
                     </button>
-                    <button type="button">
+                    <button type="button" id="flight-booker-btn">
                         <img src="./images/folder-icon.png" alt="folder"
                             width="50px" height="auto">
                         <p class="text-left">Flight Booker</p>
                     </button>
-                    <button type="button">
+                    <button type="button" id="members-only-btn">
                         <img src="./images/folder-icon.png" alt="folder"
                             width="50px" height="auto">
                         <p class="text-left">Members Only</p>
                     </button>
-                    <button type="button">
+                    <button type="button" id="event-page-btn">
                         <img src="./images/folder-icon.png" alt="folder"
                             width="50px" height="auto">
                         <p class="text-left">Event Website</p>
@@ -88,6 +88,226 @@
                             upcoming events, local steward
                             directories with filtering options, and subgroup
                             identification.</p>
+                        <ul class="flex gap-3">
+                            <li>
+                                <a
+                                    href="https://github.com/RaspberryRat/group-page">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                                        alt="github link" width="30px"
+                                        height="auto"
+                                        class="hover:animate-bounce" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://group-page.fly.dev/">
+                                    <img src="./images/go.png"
+                                        alt="live webpage" width="30px"
+                                        height="auto"
+                                        class="hover:animate-bounce" />
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="social-page scale-0 bg-white rounded w-3/5
+                    absolute bottom-80 left-44" id="social-page">
+                    <div class="bg-menu-blue flex justify-end rounded-t">
+                        <button type="button" class="p-1" id="social-close">
+                            <img src="./images/close-icon.png" alt="close icon"
+                                width="20px" height="auto"
+                                class="animate-pulse">
+                        </button>
+                    </div>
+                    <div class="bg-menu-biege flex p-1 text-xs">
+                        <span
+                            class="text-font-biege ml-2 mr-2 p-px">Address</span>
+                        <div class="flex bg-white w-[100%]">
+                            <!-- Computer unicode icon -->
+                            &#128187;
+                            <span>Group Page</span>
+                        </div>
+                    </div>
+                    <section class="p-4">
+                        <h3 class="font-bold text-lg underline mb-2">Group
+                            Webpage
+                        </h3>
+                        <p class="text-base mb-4">Blah blah.</p>
+                        <ul class="flex gap-3">
+                            <li>
+                                <a
+                                    href="https://github.com/RaspberryRat/group-page">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                                        alt="github link" width="30px"
+                                        height="auto"
+                                        class="hover:animate-bounce" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://group-page.fly.dev/">
+                                    <img src="./images/go.png"
+                                        alt="live webpage" width="30px"
+                                        height="auto"
+                                        class="hover:animate-bounce" />
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="chess-page scale-0 bg-white rounded w-3/5
+                    absolute bottom-80 left-44" id="chess-page">
+                    <div class="bg-menu-blue flex justify-end rounded-t">
+                        <button type="button" class="p-1" id="chess-close">
+                            <img src="./images/close-icon.png" alt="close icon"
+                                width="20px" height="auto"
+                                class="animate-pulse">
+                        </button>
+                    </div>
+                    <div class="bg-menu-biege flex p-1 text-xs">
+                        <span
+                            class="text-font-biege ml-2 mr-2 p-px">Address</span>
+                        <div class="flex bg-white w-[100%]">
+                            <!-- Computer unicode icon -->
+                            &#128187;
+                            <span>Chess</span>
+                        </div>
+                    </div>
+                    <section class="p-4">
+                        <h3 class="font-bold text-lg underline mb-2">Chess</h3>
+                        <p class="text-base mb-4">Blah.</p>
+                        <ul class="flex gap-3">
+                            <li>
+                                <a
+                                    href="https://github.com/RaspberryRat/group-page">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                                        alt="github link" width="30px"
+                                        height="auto"
+                                        class="hover:animate-bounce" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://group-page.fly.dev/">
+                                    <img src="./images/go.png"
+                                        alt="live webpage" width="30px"
+                                        height="auto"
+                                        class="hover:animate-bounce" />
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="flight-booker-page scale-0 bg-white rounded w-3/5
+                    absolute bottom-80 left-44" id="flight-booker-page">
+                    <div class="bg-menu-blue flex justify-end rounded-t">
+                        <button type="button" class="p-1"
+                            id="flight-booker-close">
+                            <img src="./images/close-icon.png" alt="close icon"
+                                width="20px" height="auto"
+                                class="animate-pulse">
+                        </button>
+                    </div>
+                    <div class="bg-menu-biege flex p-1 text-xs">
+                        <span
+                            class="text-font-biege ml-2 mr-2 p-px">Address</span>
+                        <div class="flex bg-white w-[100%]">
+                            <!-- Computer unicode icon -->
+                            &#128187;
+                            <span>Flight Booker</span>
+                        </div>
+                    </div>
+                    <section class="p-4">
+                        <h3 class="font-bold text-lg underline mb-2">Flight
+                            Booker</h3>
+                        <p class="text-base mb-4">Flight Booker.</p>
+                        <ul class="flex gap-3">
+                            <li>
+                                <a
+                                    href="https://github.com/RaspberryRat/group-page">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                                        alt="github link" width="30px"
+                                        height="auto"
+                                        class="hover:animate-bounce" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://group-page.fly.dev/">
+                                    <img src="./images/go.png"
+                                        alt="live webpage" width="30px"
+                                        height="auto"
+                                        class="hover:animate-bounce" />
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="members-page scale-0 bg-white rounded w-3/5
+                    absolute bottom-80 left-44" id="members-page">
+                    <div class="bg-menu-blue flex justify-end rounded-t">
+                        <button type="button" class="p-1" id="members-close">
+                            <img src="./images/close-icon.png" alt="close icon"
+                                width="20px" height="auto"
+                                class="animate-pulse">
+                        </button>
+                    </div>
+                    <div class="bg-menu-biege flex p-1 text-xs">
+                        <span
+                            class="text-font-biege ml-2 mr-2 p-px">Address</span>
+                        <div class="flex bg-white w-[100%]">
+                            <!-- Computer unicode icon -->
+                            &#128187;
+                            <span>Members only</span>
+                        </div>
+                    </div>
+                    <section class="p-4">
+                        <h3 class="font-bold text-lg underline mb-2">Members
+                            only</h3>
+                        <p class="text-base mb-4">Members only.</p>
+                        <ul class="flex gap-3">
+                            <li>
+                                <a
+                                    href="https://github.com/RaspberryRat/group-page">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                                        alt="github link" width="30px"
+                                        height="auto"
+                                        class="hover:animate-bounce" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://group-page.fly.dev/">
+                                    <img src="./images/go.png"
+                                        alt="live webpage" width="30px"
+                                        height="auto"
+                                        class="hover:animate-bounce" />
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="event-page scale-0 bg-white rounded w-3/5
+                    absolute bottom-80 left-44" id="event-page">
+                    <div class="bg-menu-blue flex justify-end rounded-t">
+                        <button type="button" class="p-1" id="event-close">
+                            <img src="./images/close-icon.png" alt="close icon"
+                                width="20px" height="auto"
+                                class="animate-pulse">
+                        </button>
+                    </div>
+                    <div class="bg-menu-biege flex p-1 text-xs">
+                        <span
+                            class="text-font-biege ml-2 mr-2 p-px">Address</span>
+                        <div class="flex bg-white w-[100%]">
+                            <!-- Computer unicode icon -->
+                            &#128187;
+                            <span>Event Page</span>
+                        </div>
+                    </div>
+                    <section class="p-4">
+                        <h3 class="font-bold text-lg underline mb-2">Event Page
+                        </h3>
+                        <p class="text-base mb-4">Event Page.</p>
                         <ul class="flex gap-3">
                             <li>
                                 <a

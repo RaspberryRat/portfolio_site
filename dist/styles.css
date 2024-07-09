@@ -586,7 +586,33 @@ video {
   }
 }
 .animate-close {
-  animation: folderClose 1s ease-in forwards;
+  animation: folderClose 500ms ease-in forwards;
+}
+@keyframes foldersTurnOff {
+
+  0% {
+    transform: scale(1, 1) translateY(0%), translateX(0%);
+  }
+
+  100% {
+    transform: scale(0, 0) translateY(-300%) translateX(70%);
+  }
+}
+.animate-foldersOff {
+  animation: foldersTurnOff 400ms ease-out forwards;
+}
+@keyframes foldersTurnOn {
+
+  0% {
+    transform: scale(0, 0) translateY(-300%) translateX(70%);
+  }
+
+  100% {
+    transform: scale(1, 1) translateY(0%), translateX(0%);
+  }
+}
+.animate-foldersOn {
+  animation: foldersTurnOn 1000ms ease-out forwards;
 }
 @keyframes folderOpen {
 
@@ -599,7 +625,7 @@ video {
   }
 }
 .animate-open {
-  animation: folderOpen 1s ease-in forwards;
+  animation: folderOpen 500ms ease-in forwards;
 }
 @keyframes pulse {
 
