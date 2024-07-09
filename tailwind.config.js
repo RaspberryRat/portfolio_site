@@ -48,7 +48,9 @@ module.exports = {
       colors: {
         'main-yellow': '#fecd45',
         'alt-blue': '#2568fb',
-        'pale-brown': '#C1A17B'
+        'pale-brown': '#C1A17B',
+        'menu-blue': '#0161f9',
+        'menu-biege': '#f1ece0',
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(to bottom right, #fecd45 49%, white 40%)',
