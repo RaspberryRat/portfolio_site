@@ -25,8 +25,9 @@ const folders = document.getElementById('folders');
 monitorBtn.addEventListener('click', () => {
     if (monitorScreen.classList.contains('animate-turnOff')) {
         monitorScreen.classList.remove('animate-turnOff');
+        monitorScreen.classList.remove('opacity-0');
         monitorScreen.classList.add('animate-turnOn');
-        // folders.classList.remove('hidden');
+        folders.classList.remove('opacity-0');
         folders.classList.remove('animate-foldersOff');
         folders.classList.add('animate-foldersOn');
     } else if (monitorScreen.classList.contains('animate-turnOn')) {
@@ -34,7 +35,6 @@ monitorBtn.addEventListener('click', () => {
         monitorScreen.classList.add('animate-turnOff');
         folders.classList.remove('animate-foldersOn');
         folders.classList.add('animate-foldersOff');
-        // folders.classList.add('hidden');
     }
 });
 

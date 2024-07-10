@@ -781,6 +781,9 @@ video {
 .underline {
   text-decoration-line: underline;
 }
+.opacity-0 {
+  opacity: 0;
+}
 .shadow-inner-xl {
   --tw-shadow: inset 0px 0px 50px 10px rgba(0, 0, 0, 0.3);
   --tw-shadow-colored: inset 0px 0px 50px 10px var(--tw-shadow-color);
