@@ -84,6 +84,8 @@ module.exports = {
         'menu-blue': '#0161f9',
         'menu-biege': '#f1ece0',
         'font-biege': '#c5c2b9',
+        'dark-blue': '#0f172b',
+        'med-blue': '#2e67a8'
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(to bottom right, #fecd45 49%, white 40%)',
