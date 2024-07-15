@@ -20,6 +20,8 @@ const eventPage = document.getElementById('event-page');
 const eventClose = document.getElementById('event-close');
 const folders = document.getElementById('folders');
 const aboutMe = document.getElementById('about-me');
+const aboutMePage = document.getElementById('about-me-page');
+const aboutMeClose = document.getElementById('about-me-close');
 
 
 
@@ -104,4 +106,15 @@ eventFolder.addEventListener('click', () => {
 eventClose.addEventListener('click', () => {
     eventPage.classList.remove('animate-open');
     eventPage.classList.add('animate-close')
+});
+
+
+aboutMe.addEventListener('click', () => {
+    aboutMePage.classList.remove('animate-close');
+    aboutMePage.classList.add('animate-open');
+});
+
+aboutMeClose.addEventListener('click', () => {
+    aboutMePage.classList.remove('animate-open');
+    aboutMePage.classList.add('animate-close')
 });
