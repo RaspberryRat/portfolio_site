@@ -19,6 +19,7 @@ const membersClose = document.getElementById('members-close');
 const eventPage = document.getElementById('event-page');
 const eventClose = document.getElementById('event-close');
 const folders = document.getElementById('folders');
+const aboutMe = document.getElementById('about-me');
 
 
 
@@ -29,12 +30,16 @@ monitorBtn.addEventListener('click', () => {
         monitorScreen.classList.add('animate-turnOn');
         folders.classList.remove('opacity-0');
         folders.classList.remove('animate-foldersOff');
+        aboutMe.classList.remove('animate-foldersOff');
         folders.classList.add('animate-foldersOn');
+        aboutMe.classList.add('animate-foldersOn');
     } else if (monitorScreen.classList.contains('animate-turnOn')) {
         monitorScreen.classList.remove('animate-turnOn');
         monitorScreen.classList.add('animate-turnOff');
         folders.classList.remove('animate-foldersOn');
+        aboutMe.classList.remove('animate-foldersOn');
         folders.classList.add('animate-foldersOff');
+        aboutMe.classList.add('animate-foldersOff');
     }
 });
 
