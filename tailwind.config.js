@@ -88,7 +88,7 @@ module.exports = {
         'med-blue': '#2e67a8'
       },
       backgroundImage: {
-        'custom-gradient': 'linear-gradient(to bottom right, #fecd45 49%, white 40%)',
+        'custom-gradient': 'linear-gradient(to bottom right, rgba(0, 0, 0, 0) 60%, white 65%)',
         'matt-gradient': 'linear-gradient(145deg, #d6bfae, #c3a594)',
       },
     },

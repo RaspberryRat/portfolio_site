@@ -546,6 +546,9 @@ video {
     .mt-2 {
   margin-top: 0.5rem;
 }
+    .mt-8 {
+  margin-top: 2rem;
+}
     .block {
   display: block;
 }
@@ -555,11 +558,32 @@ video {
     .grid {
   display: grid;
 }
+    .h-auto {
+  height: auto;
+}
+    .h-full {
+  height: 100%;
+}
+    .w-1\/2 {
+  width: 50%;
+}
     .w-3\/5 {
   width: 60%;
 }
+    .w-8 {
+  width: 2rem;
+}
     .w-\[100\%\] {
   width: 100%;
+}
+    .w-\[2rem\] {
+  width: 2rem;
+}
+    .w-full {
+  width: 100%;
+}
+    .w-screen {
+  width: 100vw;
 }
     .min-w-\[320px\] {
   min-width: 320px;
@@ -672,11 +696,17 @@ video {
     .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+    .items-center {
+  align-items: center;
+}
     .justify-end {
   justify-content: flex-end;
 }
     .justify-center {
   justify-content: center;
+}
+    .justify-evenly {
+  justify-content: space-evenly;
 }
     .gap-3 {
   gap: 0.75rem;
@@ -700,6 +730,13 @@ video {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
+    .border-t-4 {
+  border-top-width: 4px;
+}
+    .border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
     .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -719,6 +756,9 @@ video {
     .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+    .bg-custom-gradient {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 60%, white 65%);
 }
     .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
@@ -752,11 +792,18 @@ video {
     .p-4 {
   padding: 1rem;
 }
+    .p-6 {
+  padding: 1.5rem;
+}
     .p-px {
   padding: 1px;
 }
     .text-left {
   text-align: left;
+}
+    .text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
     .text-base {
   font-size: 1rem;
@@ -789,6 +836,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(241 245 249 / var(--tw-text-opacity));
 }
+    .text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
     .underline {
   text-decoration-line: underline;
 }
@@ -804,6 +855,13 @@ video {
   --tw-shadow: inset 0px 10px 3px -5px #000,inset -10px 0px 3px -5px #000,inset 0px -10px 3px -5px #000,inset 10px 0px 3px -5px #000;
   --tw-shadow-colored: inset 0px 10px 3px -5px var(--tw-shadow-color), inset -10px 0px 3px -5px var(--tw-shadow-color), inset 0px -10px 3px -5px var(--tw-shadow-color), inset 10px 0px 3px -5px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+    .invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+    .filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
     @keyframes bounce {
 
